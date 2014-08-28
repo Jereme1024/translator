@@ -57,7 +57,7 @@ function is_en($str){
     	$non_eng;
     }
   }
-  return ($non_eng / $len) <= 0.2;
+  return ($non_eng / $len) <= 0.5;
 }
 $S = trim($argv[1]);
 $S = str_replace("- ","",$S);
