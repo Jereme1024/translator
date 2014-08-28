@@ -54,7 +54,7 @@ function is_en($str){
   for($i=0;$i<$len;$i++)  {
     $sbit = ord(substr($str,$i,1));
     if($sbit >= 128) {
-    	$non_eng;
+    	$non_eng++;
     }
   }
   return ($non_eng / $len) <= 0.5;
